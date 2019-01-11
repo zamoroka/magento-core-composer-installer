@@ -145,10 +145,6 @@ class CoreManager implements PluginInterface, EventSubscriberInterface
                 }
             }
         }
-
-        if (count($installedCorePackages) > 1) {
-            throw new \RuntimeException("Cannot use more than 1 core package");
-        }
     }
 
 

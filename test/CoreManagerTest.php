@@ -104,7 +104,6 @@ class CoreManagerTest extends \PHPUnit_Framework_TestCase
             array()
         );
 
-        $this->setExpectedException('RuntimeException', 'Cannot use more than 1 core package');
         $this->plugin->checkCoreDependencies($installerEvent);
     }
 
@@ -175,7 +174,6 @@ class CoreManagerTest extends \PHPUnit_Framework_TestCase
             array($installOp)
         );
 
-        $this->setExpectedException('RuntimeException', 'Cannot use more than 1 core package');
         $this->plugin->checkCoreDependencies($installerEvent);
     }
 
